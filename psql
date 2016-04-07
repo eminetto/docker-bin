@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker exec -it postgresql sudo -u postgres psql
+
