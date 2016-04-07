@@ -5,7 +5,19 @@ Get your binaries syntax back using docker under the hood.
 Add this folder to your path so you can remove all your
 development dependencies from your host.
 
+```
+#my ~/.zshrc
+export PATH=$PATH:~/projects/docker-bin
+```
+
+##Execute:
+
+```
+mysql --host=172.17.0.1 --port=3306 mydatabase
+```
+
 Contributions are welcome.
+
 
 ##The MIT License (MIT)
 

@@ -2,11 +2,10 @@
 
 command="exec mysql $@"
 additionalDockerArgs=""
-additionalMysqlArgs=""
 
 [ -f ~/.my.cnf ] && {
     from=$(realpath ~/.my.cnf)
     additionalDockerArgs=" -v $from:/etc/mysql/conf.d/my.cnf"
 }
 
-docker run $additionalDockerArgs -it --rm mariadb sh -c "$command $additionalMysqlArgs"
+docker run $additionalDockerArgs -it --rm mariadb sh -c "$command"
